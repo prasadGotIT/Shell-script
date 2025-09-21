@@ -6,3 +6,4 @@ echo "The sum of $NUMBER1 and $NUMBER2 is: $SUM"
 LEADERS=("Modi" "putin" "Trump")
 echo "All leaders: ${LEADERS[@]}"
 
+echo "First Leader: ${LEADERS[0]}"
