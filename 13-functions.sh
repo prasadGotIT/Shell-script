@@ -6,13 +6,11 @@ if [ $USERID -ne 0 ]; then
 fi 
 
 VALIDATE(){
-
 if [ $1 -ne 0 ]; then
-   echo "ERROR:: $2 installation is failed
-   exit 1 
+  echo " Error:: Installation $2 is failed
+  exit 1
 else
-
-    echo " $2 installation is successfull"  
+  echo " Installation $2 is Success
 fi
 
 }
