@@ -1,4 +1,9 @@
 #!/bin/bash
 
-echo -e "\e[31m hello"
+R="\e[31m"
+G="\e[32m"
+Y="\e[33m"
+N="\e[0m"
+
+echo -e "$G Hello $N"
 
