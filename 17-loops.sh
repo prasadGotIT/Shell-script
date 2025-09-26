@@ -12,7 +12,7 @@ LOGS_FILE="$LOGS_FOLDER/$SCRIPT_NAME.log"
 mkdir -p $LOGS_FOLDER
 echo "Script started executed at: $(date)" | tee -a $LOGS_FILE
 
-if [$USERID -ne 0]; then
+if [ $USERID -ne 0 ]; then
    echo "ERROR::Please run this script with root privelege"
    exit 1
 fi
@@ -32,7 +32,7 @@ for package in $@
 do
 
 dnf list installed $package &>>$LOGS_FILE
-if [$? -ne 0 ]; then
+if [ $? -ne 0 ]; then
    dnf install $package -y &>>$LOGS_FILE
    VALIDATE $? "$package"
 else
