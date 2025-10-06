@@ -1,6 +1,6 @@
 #!/bin/bash
 
-count =5
+count=5
 
 echo "starting countdown.."
 
